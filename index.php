@@ -1,16 +1,30 @@
 <?php get_header(); ?>
 
-<main class="container">
-    <section class="hero">
-        <h1>Salud Masculina de Vanguardia</h1>
-        <p>Especialista en Andrología, Salud Sexual y Medicina Regenerativa.</p>
-        <a href="#contacto" class="btn">Pedir Consulta</a>
-    </section>
+<main id="main-content">
 
-    <section class="intro-doctor">
-        <h2>"La salud es tu mayor bien, invierte en él"</h2>
-        <p>Soy el Dr. Javier Ruiz Romero, andrólogo dedicado a humanizar la atención médica...</p>
-    </section>
+    <?php 
+    // 1. Atracción: El impacto visual inicial
+    get_template_part('template-parts/banner'); 
+    ?>
+
+    <?php 
+    // 2. Educación: Qué problemas resolvemos
+    get_template_part('template-parts/treatments'); 
+    ?>
+
+    <?php 
+    /* 3. CONFIANZA: Aquí va la nueva sección del Doctor.
+       Crea un archivo llamado 'doctor.php' en la carpeta 'template-parts'.
+    */
+    get_template_part('template-parts/biografia');
+    ?>
+
+  <?php 
+    // 5. Conversión: Formulario de contacto
+    get_template_part('template-parts/contacto'); 
+
+    get_template_part('template-parts/mapa'); 
+    ?>
 </main>
 
 <?php get_footer(); ?>
