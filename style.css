@@ -188,6 +188,7 @@ body {
     justify-content: space-between;
     height: 96px;
     gap: 30px;
+    margin-top: 20px;
     transition: height 0.35s ease;
 }
 
@@ -2061,5 +2062,589 @@ section {
     .contact-split-right { padding: 64px 24px; }
     .fsplit-row { grid-template-columns: 1fr; }
     .contact-split-headline { font-size: clamp(2.8rem, 10vw, 4rem); }
+}
+
+/* ==========================================================================
+   SPECIALTY PAGES — ESTILO MIAMI SKIN
+   ========================================================================== */
+
+.sp-page { background: #fff; }
+
+/* HERO */
+.sp-hero {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    margin-top: -150px;
+}
+
+.sp-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+}
+
+.sp-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.sp-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    margin: 0 0 12px;
+    text-transform: none;
+}
+
+.sp-hero-location {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin: 0 0 40px;
+}
+
+.sp-hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.sp-btn {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.sp-btn-outline {
+    border: 1px solid rgba(255,255,255,0.6);
+    color: #fff;
+    background: transparent;
+}
+
+.sp-btn-outline:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: #fff;
+}
+
+.sp-btn-solid {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    backdrop-filter: blur(8px);
+}
+
+.sp-btn-solid:hover {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+}
+
+/* SUB-NAV */
+.sp-subnav {
+    background: var(--secondary-blue);
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    position: sticky;
+    top: 140px;
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+}
+
+.sp-subnav-inner {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.sp-subnav-link {
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    text-decoration: none;
+    padding: 18px 32px;
+    border-right: 1px solid var(--border-color);
+    transition: color 0.3s;
+}
+
+.sp-subnav-link:first-child { border-left: 1px solid var(--border-color); }
+
+.sp-subnav-link:hover { color: var(--primary-black); }
+
+/* CONTENEDOR ESTRECHO */
+.sp-narrow {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TÍTULOS DE SECCIÓN */
+.sp-big-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--accent-warm);
+    letter-spacing: 0;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 16px;
+    text-transform: none;
+}
+
+.sp-big-title em {
+    font-style: italic;
+    color: var(--accent-sand);
+}
+
+.sp-big-sub {
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--accent-sand);
+    text-align: center;
+    margin: 0 0 48px;
+    display: block;
+}
+
+/* TEXTO CUERPO */
+.sp-body-text {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.sp-body-text p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* INTRO */
+.sp-intro {
+    padding: 120px 0 0;
+}
+
+.sp-stat-strip {
+    background: var(--accent-warm);
+    padding: 48px 24px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.sp-stat-text {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-style: italic;
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+/* SECCIONES DE TRATAMIENTO */
+.sp-treatment {
+    padding: 0 0 100px;
+}
+
+/* CABECERA DE SECCIÓN — banda de color distintiva */
+.sp-section-header {
+    padding: 56px 0;
+    margin-bottom: 72px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sp-section-header--blue {
+    background: var(--secondary-blue);
+}
+
+.sp-section-header--warm {
+    background: var(--bg-warm);
+    border-top: 3px solid var(--accent-gold);
+}
+
+.sp-section-header--dark {
+    background: var(--primary-black);
+}
+
+.sp-section-tag {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    display: block;
+    margin-bottom: 16px;
+}
+
+.sp-section-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--primary-black);
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.sp-section-header--dark h2 {
+    color: #fff;
+}
+
+.sp-section-header h2 em {
+    color: var(--accent-gold);
+}
+
+.sp-section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.sp-section-intro {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sp-section-intro p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+/* GRID DE VIDEOS */
+.sp-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.sp-videos-grid--single {
+    grid-template-columns: 1fr;
+}
+
+.sp-video-card {
+    text-align: center;
+}
+
+.sp-video-thumb {
+    position: relative;
+    background: var(--primary-black);
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.sp-video-card--large .sp-video-thumb {
+    aspect-ratio: 16/6;
+    background: var(--accent-warm);
+}
+
+.sp-play-btn--large {
+    width: 80px;
+    height: 80px;
+}
+
+.sp-play-btn--large svg {
+    width: 32px;
+    height: 32px;
+}
+
+.sp-play-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    backdrop-filter: blur(4px);
+}
+
+.sp-play-btn svg {
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+}
+
+.sp-play-btn:hover {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+    transform: scale(1.08);
+}
+
+.sp-video-dur {
+    position: absolute;
+    bottom: 12px;
+    right: 14px;
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+}
+
+.sp-video-label {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--accent-warm);
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* SPLIT LAYOUT — texto | cards */
+.sp-split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.sp-split-layout--reversed {
+    direction: rtl;
+}
+.sp-split-layout--reversed > * {
+    direction: ltr;
+}
+
+.sp-split-text {
+    padding-top: 8px;
+}
+
+.sp-section-num {
+    font-family: var(--font-display);
+    font-size: 7rem;
+    font-style: italic;
+    color: var(--border-color);
+    line-height: 1;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sp-split-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--primary-black);
+    line-height: 1.15;
+    margin: 0 0 8px;
+    text-transform: none;
+}
+
+.sp-split-title em {
+    color: var(--accent-gold);
+}
+
+.sp-split-sub {
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent-sand);
+    display: block;
+    margin-bottom: 28px;
+}
+
+.sp-split-text p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.9;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+.sp-link-arrow {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 16px;
+    border-bottom: 1px solid rgba(193,179,153,0.3);
+    padding-bottom: 4px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.sp-link-arrow:hover {
+    color: var(--primary-black);
+    border-color: var(--primary-black);
+}
+
+/* CONDITION CARDS */
+.sp-condition-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.sp-condition-card {
+    background: var(--bg-warm);
+    border: 1px solid var(--border-color);
+    padding: 32px 28px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.sp-condition-card:hover {
+    border-color: var(--accent-gold);
+    background: #fff;
+}
+
+.sp-card-num {
+    font-family: var(--font-body);
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+    color: var(--accent-gold);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.sp-condition-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--primary-black);
+    margin: 0 0 10px;
+    text-transform: none;
+}
+
+.sp-condition-card p {
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    color: #999;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* BENEFIT CARDS */
+.sp-benefit-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.sp-benefit-card {
+    background: var(--accent-warm);
+    padding: 36px 32px;
+}
+
+.sp-benefit-card h3 {
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 14px;
+    font-weight: 500;
+}
+
+.sp-benefit-card p {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* CTA FINAL */
+.sp-cta {
+    padding: 140px 0;
+    background: var(--primary-black);
+    text-align: center;
+}
+
+.sp-cta-inner .eyebrow-text { color: var(--accent-gold); }
+
+.sp-cta-inner .btn-transparent {
+    border-color: rgba(255,255,255,0.4);
+    color: #fff;
+}
+
+.sp-cta-inner .btn-transparent:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #fff;
+    color: #fff;
+}
+
+.sp-cta-inner .sp-big-title {
+    color: rgba(255,255,255,0.25);
+    margin-bottom: 24px;
+}
+
+.sp-cta-inner p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 48px;
+    line-height: 1.8;
+}
+
+.sp-cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .sp-split-layout { grid-template-columns: 1fr; gap: 48px; }
+    .sp-split-layout--reversed { direction: ltr; }
+    .sp-subnav-link { padding: 16px 20px; font-size: 0.6rem; }
+    .sp-section-num { font-size: 5rem; }
+}
+
+@media (max-width: 600px) {
+    .sp-hero-title { font-size: clamp(2.5rem, 14vw, 4rem); }
+    .sp-condition-cards { grid-template-columns: 1fr; }
+    .sp-benefit-cards { grid-template-columns: 1fr; }
+    .sp-subnav-inner { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; }
+    .sp-subnav-link { white-space: nowrap; border-right: none; border-bottom: 1px solid var(--border-color); }
+    .sp-subnav-link:first-child { border-left: none; }
 }
 

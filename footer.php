@@ -1,213 +1,253 @@
-<footer class="site-footer-luxe">
-        <div class="container">
+<footer class="site-footer-miami" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/marmol.jpg');">
+    <div class="footer-overlay"></div> <div class="container footer-inner">
 
-            <div class="footer-header-luxe">
-                <a href="<?php echo home_url(); ?>" class="footer-logo-main">
-                    Dr. Javier Ruiz Romero
-                </a>
-                <p class="footer-tagline-luxe">Andrología Avanzada &amp; Salud Masculina de Autor</p>
-            </div>
+        <div class="footer-brand">
+            <a href="<?php echo home_url(); ?>" class="footer-logo-miami">
+                Dr. Javier <span class="gold-italic">Ruiz Romero</span>
+            </a>
+            <p class="footer-tagline">Andrología Avanzada · Salud Masculina de Autor</p>
+        </div>
 
-            <div class="footer-content-luxe">
-                <div class="footer-contact-block">
-                    <p class="f-label">Contacto</p>
-                    <p class="f-detail">+34 607 198 560</p>
-                    <p class="f-detail">info@drjavierruiz.com</p>
-                </div>
-
-                <div class="footer-contact-block">
-                    <p class="f-label">Sedes</p>
-                    <p class="f-detail">Madrid — C. Bárbara de Braganza 14</p>
-                    <p class="f-detail">Barcelona — Sepulveda, 125</p>
-                    <p class="f-detail">Reus — Passeig Sunyer, 49</p>
-                </div>
-
-                <div class="footer-hours-block">
-                    <p class="f-label">Horario</p>
-                    <p class="f-detail">Lun–Vie: 9:00 – 20:00</p>
-                    <p class="f-detail">Sáb–Dom: Cerrado</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="f-eyebrow">Contacto</span>
+                <a href="tel:+34607198560" class="f-link">+34 607 198 560</a>
+                <a href="mailto:info@drjavierruiz.com" class="f-link">info@drjavierruiz.com</a>
+                <div class="footer-social-minimal">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
                 </div>
             </div>
 
-            <div class="footer-social-luxe">
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+            <div class="footer-col">
+                <span class="f-eyebrow">Sedes Especializadas</span>
+                <p class="f-text"><strong>Madrid</strong> — C. Bárbara de Braganza 14</p>
+                <p class="f-text"><strong>Barcelona</strong> — Sepulveda, 125</p>
+                <p class="f-text"><strong>Reus</strong> — Passeig Sunyer, 49</p>
             </div>
 
-            <div class="footer-legal-luxe">
-                <p>&copy; <?php echo date('Y'); ?> Dr. Javier Ruiz Romero &mdash; Todos los derechos reservados</p>
-                <nav class="footer-links-luxe">
+            <div class="footer-col">
+                <span class="f-eyebrow">Horario</span>
+                <p class="f-text">Lunes a Viernes</p>
+                <p class="f-text">09:00 – 20:00</p>
+                <a href="#contacto" class="btn-footer-gold">Solicitar Cita</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; <?php echo date('Y'); ?> Dr. Javier Ruiz Romero</p>
+                <nav class="footer-legal-links">
                     <a href="<?php echo home_url('/aviso-legal/'); ?>">Aviso Legal</a>
                     <a href="<?php echo home_url('/privacidad/'); ?>">Privacidad</a>
                     <a href="<?php echo home_url('/cookies/'); ?>">Cookies</a>
                 </nav>
             </div>
-
         </div>
-    </footer>
 
-    <?php wp_footer(); ?>
+    </div>
+</footer>
+
+<a href="https://wa.me/34607198560" class="wa-miami-style" target="_blank">
+    WhatsApp Directo <span>&rarr;</span>
+</a>
+
+<?php wp_footer(); ?>
 </body>
 </html>
-
 <style>
 /* ==========================================================================
-   FOOTER LUXE — FONDO OSCURO
+   FOOTER MIAMI GALLERY — REFINADO
    ========================================================================== */
 
-.site-footer-luxe {
-    background-color: var(--accent-blue-deep);
-    padding: 100px 0 40px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+.site-footer-miami {
+    position: relative;
+    padding: 120px 0 60px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efecto parallax sutil */
+    color: #444;
+    overflow: hidden;
+    border-top: 1px solid rgba(197, 164, 126, 0.2);
+}
+
+/* Capa para que el mármol no ensucie el diseño */
+.footer-overlay {
+    position: absolute;
+    inset: 0;
+        background: linear-gradient(to bottom, 
+            rgba(255,255,255,0.80) 0%, 
+            rgba(255,255,255,0.65) 50%, 
+            rgba(255,255,255,0.80) 100%);
+    z-index: 1;
+}
+
+.footer-inner {
+    position: relative;
+    z-index: 2;
+}
+
+/* Branding */
+.footer-brand {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.footer-logo-miami {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    color: #222;
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+}
+
+.footer-logo-miami .gold-italic {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.footer-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* Grid de Información */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-eyebrow {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent-gold);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.f-link, .f-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.f-link:hover { color: var(--accent-gold); }
+.f-text strong { color: #333; font-weight: 500; }
+
+/* Botón y Redes */
+.btn-footer-gold {
+    align-self: flex-start;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-gold);
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.footer-social-minimal {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.footer-social-minimal a {
+    color: #aaa;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer-social-minimal a:hover { color: var(--accent-gold); }
+
+/* Legal */
+.footer-bottom {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-legal p {
+    font-size: 0.65rem;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-/* Logo */
-.footer-logo-main {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 300;
-    font-style: italic;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 0;
-    display: block;
-    margin-bottom: 14px;
-    transition: color 0.3s;
-}
-
-.footer-logo-main:hover {
-    color: var(--accent-gold);
-}
-
-.footer-tagline-luxe {
-    font-family: var(--font-body);
-    font-size: 0.63rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 72px;
-}
-
-/* Bloques de info */
-.footer-content-luxe {
+.footer-legal-links {
     display: flex;
+    gap: 25px;
     justify-content: center;
-    gap: 80px;
-    margin: 0 auto 64px;
-    padding: 0 20px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding-top: 56px;
-    padding-bottom: 56px;
 }
 
-.f-label {
-    font-family: var(--font-body);
-    font-size: 0.6rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 600;
-    margin: 0 0 16px;
-}
-
-.f-detail {
-    font-family: var(--font-body);
-    font-size: 0.88rem;
-    color: #fff;
-    margin: 6px 0;
-    font-weight: 300;
-}
-
-/* Redes sociales */
-.footer-social-luxe {
-    margin-bottom: 56px;
-}
-
-.footer-social-luxe a {
-    color: #fff;
-    font-size: 1.2rem;
-    margin: 0 16px;
-    transition: color 0.3s;
+.footer-legal-links a {
+    font-size: 0.65rem;
+    color: #888;
     text-decoration: none;
-}
-
-.footer-social-luxe a:hover {
-    color: var(--accent-gold);
-}
-
-/* Barra legal */
-.footer-legal-luxe {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 40px;
-}
-
-.footer-legal-luxe p {
-    font-family: var(--font-body);
-    font-size: 0.63rem;
-    color: #fff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-
-.footer-links-luxe {
-    margin-top: 12px;
-}
-
-.footer-links-luxe a {
-    font-family: var(--font-body);
-    font-size: 0.63rem;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 12px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    transition: color 0.3s;
 }
 
-.footer-links-luxe a:hover {
-    color: var(--accent-gold);
-}
-
-/* Botón WhatsApp flotante */
+/* WhatsApp Flotante Miami Style */
 .wa-miami-style {
     position: fixed;
-    bottom: 36px;
-    right: 36px;
-    background: var(--accent-blue-deep);
-    color: #fff;
-    padding: 14px 32px;
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 100px;
+    bottom: 40px;
+    right: 40px;
+    background: #fff;
+    color: #222;
+    padding: 16px 30px;
+    border-radius: 0; /* Estilo cuadrado de lujo */
+    border: 1px solid var(--accent-gold);
     font-family: var(--font-body);
-    font-size: 0.62rem;
+    font-size: 0.65rem;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 0 12px 40px rgba(122,154,179,0.35);
-    transition: all 0.3s ease;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.4s ease;
 }
+
+.wa-miami-style span { transition: transform 0.3s; }
 
 .wa-miami-style:hover {
     background: var(--accent-gold);
-    border-color: var(--accent-gold);
     color: #fff;
+    transform: translateY(-5px);
 }
 
+.wa-miami-style:hover span { transform: translateX(5px); }
+
 /* Responsive */
-@media (max-width: 768px) {
-    .footer-content-luxe {
-        flex-direction: column;
-        gap: 36px;
-        align-items: center;
-    }
-    .footer-logo-main { font-size: 2.2rem; }
-    .wa-miami-style { bottom: 24px; right: 24px; padding: 12px 24px; }
+@media (max-width: 991px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .footer-col { align-items: center; }
+    .btn-footer-gold { align-self: center; }
+    .footer-social-minimal { justify-content: center; }
 }
 </style>
