@@ -1,3 +1,13 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 80
+  });
+</script>
 <footer class="site-footer-miami" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/marmol.jpg');">
     <div class="footer-overlay"></div> <div class="container footer-inner">
 

@@ -132,6 +132,17 @@ p {
    ========================================================================== */
 
 .site-header {
+    display: block !important; /* Esto anula el display:none que vimos en el inspector */
+    visibility: visible !important;
+}
+
+/* Haz lo mismo para el footer si no lo ves */
+.site-footer {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.site-header {
     /* Glassmorphism: fondo translúcido con desenfoque */
     background: var(--secondary-blue);
     backdrop-filter: blur(18px);
