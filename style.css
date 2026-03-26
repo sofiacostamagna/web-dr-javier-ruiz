@@ -1,3 +1,26 @@
+/* =============================
+   FOOTER PERSONALIZADO MIAMI
+   ============================= */
+.site-footer-miami {
+    font-size: 1.25rem;
+}
+.site-footer-miami .footer-tagline,
+.site-footer-miami .f-eyebrow,
+.site-footer-miami .f-link,
+.site-footer-miami .f-text,
+.site-footer-miami .btn-footer-gold,
+.site-footer-miami .footer-legal,
+.site-footer-miami .footer-legal-links a {
+    font-size: 1.15em;
+}
+.site-footer-miami .f-eyebrow {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.site-footer-miami .footer-logo-miami {
+    font-size: 2em;
+}
 
 /*
 Theme Name: Web Dr Javier Ruiz Romero
@@ -902,7 +925,7 @@ section {
 
 .eyebrow-text {
     font-family: var(--font-body);
-    font-size: 0.72rem;
+    font-size: 1.1rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--accent-warm);
@@ -918,7 +941,7 @@ section {
 .title-pre {
     display: block;
     font-family: var(--font-body);
-    font-size: clamp(0.85rem, 1.5vw, 1.3rem);
+    font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -929,7 +952,7 @@ section {
 .title-display {
     display: block;
     font-family: var(--font-display);
-    font-size: clamp(4rem, 9vw, 9rem);
+    font-size: clamp(5rem, 12vw, 12rem);
     font-weight: 400;
     font-style: italic;
     color: var(--primary-black);
@@ -939,7 +962,7 @@ section {
 
 .hero-description {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.35rem;
     color: #666;
     line-height: 1.9;
     font-weight: 300;
