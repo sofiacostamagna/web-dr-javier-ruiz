@@ -46,6 +46,14 @@
                 <p class="f-text">09:00 – 20:00</p>
                 <a href="https://drjavierruizromero.com/contacto/" class="btn-footer-gold">Solicitar Cita</a>
             </div>
+
+            <div class="footer-col footer-col-qr">
+                <span class="f-eyebrow">Escanéame</span>
+                <div class="footer-qr">
+                    <img src="https://drjavierruizromero.com/wp-content/uploads/2026/03/DrJavierRuiz.png" alt="QR Dr. Javier Ruiz">
+                </div>
+                <p class="footer-qr-label">Accede al sitio</p>
+            </div>
         </div>
 
         <div class="footer-bottom">
@@ -71,10 +79,6 @@
 </html>
 
 <style>
-/* =============================================
-   FOOTER MIAMI — EQUILIBRADO
-   ============================================= */
-
 .site-footer-miami {
     position: relative;
     padding: 100px 0 50px;
@@ -85,17 +89,12 @@
     overflow: hidden;
     border-top: 1px solid rgba(197,164,126,0.2);
 }
-
 .footer-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom,
-        rgba(255,255,255,0.92) 0%,
-        rgba(255,255,255,0.82) 50%,
-        rgba(255,255,255,0.92) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.82) 50%, rgba(255,255,255,0.92) 100%);
     z-index: 1;
 }
-
 .footer-inner-wrap {
     position: relative;
     z-index: 2;
@@ -103,15 +102,12 @@
     margin: 0 auto;
     padding: 0 60px;
 }
-
-/* Logo y tagline */
 .footer-brand {
     text-align: center;
     margin-bottom: 60px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(197,164,126,0.15);
 }
-
 .footer-logo-miami {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 4vw, 3rem);
@@ -122,60 +118,21 @@
     line-height: 1;
     letter-spacing: -1px;
 }
-
-.footer-logo-miami .gold-italic {
-    color: var(--accent-gold);
-    font-style: italic;
-}
-
-.footer-tagline {
-    font-size: 0.68rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #aaa;
-    margin-top: 16px;
-    margin-bottom: 0;
-}
-
-/* Grid de 3 columnas */
+.footer-logo-miami .gold-italic { color: var(--accent-gold); font-style: italic; }
+.footer-tagline { font-size: 0.68rem; letter-spacing: 5px; text-transform: uppercase; color: #aaa; margin-top: 16px; margin-bottom: 0; }
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr auto;
     gap: 48px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(0,0,0,0.06);
+    align-items: start;
 }
-
-.footer-col {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Eyebrow */
-.f-eyebrow {
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--accent-gold);
-    margin-bottom: 24px;
-    font-weight: 600;
-}
-
-/* Links y texto */
-.f-link, .f-text {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 12px;
-    text-decoration: none;
-    font-weight: 300;
-    line-height: 1.6;
-    transition: color 0.3s;
-}
-
+.footer-col { display: flex; flex-direction: column; }
+.f-eyebrow { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent-gold); margin-bottom: 24px; font-weight: 600; }
+.f-link, .f-text { font-size: 0.95rem; color: #666; margin-bottom: 12px; text-decoration: none; font-weight: 300; line-height: 1.6; transition: color 0.3s; }
 .f-link:hover { color: var(--accent-gold); }
 .f-text strong { color: #333; font-weight: 500; }
-
-/* Botón solicitar cita */
 .btn-footer-gold {
     align-self: flex-start;
     margin-top: 16px;
@@ -189,65 +146,39 @@
     font-weight: 600;
     transition: color 0.3s;
 }
-
 .btn-footer-gold:hover { color: var(--accent-gold); }
+.footer-social-minimal { display: flex; gap: 16px; margin-top: 24px; }
+.footer-social-icon { color: #bbb; transition: color 0.3s, transform 0.3s; display: flex; align-items: center; }
+.footer-social-icon:hover { color: var(--accent-gold); transform: translateY(-3px); }
 
-/* Iconos sociales */
-.footer-social-minimal {
-    display: flex;
-    gap: 16px;
-    margin-top: 24px;
+/* QR */
+.footer-col-qr { align-items: center; text-align: center; }
+.footer-qr {
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid rgba(197,164,126,0.25);
+    margin-bottom: 10px;
 }
-
-.footer-social-icon {
-    color: #bbb;
-    transition: color 0.3s, transform 0.3s;
-    display: flex;
-    align-items: center;
-}
-
-.footer-social-icon:hover {
-    color: var(--accent-gold);
-    transform: translateY(-3px);
+.footer-qr img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.footer-qr-label {
+    font-size: 0.62rem !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #bbb !important;
+    margin: 0 !important;
 }
 
 /* Legal */
-.footer-bottom {
-    padding-top: 36px;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-legal {
-    text-align: center;
-}
-
-.footer-legal p {
-    font-size: 0.68rem;
-    color: #bbb;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 12px;
-}
-
-.footer-legal-links {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
-
-.footer-legal-links a {
-    font-size: 0.68rem;
-    color: #aaa;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: color 0.3s;
-}
-
+.footer-bottom { padding-top: 36px; display: flex; justify-content: center; }
+.footer-legal { text-align: center; }
+.footer-legal p { font-size: 0.68rem; color: #bbb; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
+.footer-legal-links { display: flex; gap: 24px; justify-content: center; }
+.footer-legal-links a { font-size: 0.68rem; color: #aaa; text-decoration: none; text-transform: uppercase; letter-spacing: 1.5px; transition: color 0.3s; }
 .footer-legal-links a:hover { color: var(--accent-gold); }
 
-/* WhatsApp flotante */
+/* WhatsApp */
 .wa-miami-style {
     position: fixed;
     bottom: 40px;
@@ -269,17 +200,16 @@
     gap: 12px;
     transition: all 0.4s ease;
 }
-
 .wa-miami-style span { transition: transform 0.3s; }
 .wa-miami-style:hover { background: var(--accent-gold); color: #fff; transform: translateY(-4px); }
 .wa-miami-style:hover span { transform: translateX(5px); }
 
 /* Responsive */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .footer-inner-wrap { padding: 0 40px; }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .footer-col-qr { display: none; }
 }
-
 @media (max-width: 640px) {
     .footer-inner-wrap { padding: 0 24px; }
     .footer-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; }
