@@ -26,49 +26,53 @@
         <nav class="main-nav" aria-label="Navegación principal">
             <ul class="nav-list">
 
+                <!-- SALUD SEXUAL → subpáginas individuales -->
                 <li class="has-dropdown">
                     <a href="<?php echo home_url('/salud-sexual/'); ?>">Salud Sexual</a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo home_url('/salud-sexual/problemas-de-ereccion/'); ?>">Problemas de erección</a></li>
-                        <li><a href="<?php echo home_url('/salud-sexual/terapia-hormonal/'); ?>">Terapia hormonal</a></li>
-                        <li><a href="<?php echo home_url('/salud-sexual/problemas-de-eyaculacion/'); ?>">Problemas de eyaculación</a></li>
+                        <li><a href="<?php echo home_url('/salud-sexual/#seccion-a'); ?>">Problemas de erección</a></li>
+                        <li><a href="<?php echo home_url('/salud-sexual/#seccion-b'); ?>">Terapia hormonal</a></li>
+                        <li><a href="<?php echo home_url('/salud-sexual/#seccion-c'); ?>">Problemas de eyaculación</a></li>
                     </ul>
                 </li>
 
+                <!-- FERTILIDAD → subpáginas individuales -->
                 <li class="has-dropdown">
-                    <a href="<?php echo home_url('/fertilidad-masculina/'); ?>">Fertilidad</a>
+                    <a href="<?php echo home_url('/fertilidad/'); ?>">Fertilidad</a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo home_url('/fertilidad-masculina/estudio-fertilidad/'); ?>">Estudio de fertilidad</a></li>
-                        <li><a href="<?php echo home_url('/fertilidad-masculina/varicocele/'); ?>">Varicocele</a></li>
-                        <li><a href="<?php echo home_url('/fertilidad-masculina/vasovasostomia/'); ?>">Vasovasostomía</a></li>
-                        <li><a href="<?php echo home_url('/fertilidad-masculina/recuperacion-testicular/'); ?>">Recuperación testicular</a></li>
-                        <li><a href="<?php echo home_url('/fertilidad-masculina/vasectomia/'); ?>">Vasectomía sin bisturí</a></li>
+                        <li><a href="<?php echo home_url('/fertilidad/#estudio'); ?>">Estudio de fertilidad</a></li>
+                        <li><a href="<?php echo home_url('/fertilidad/#varicocele'); ?>">Varicocele</a></li>
+                        <li><a href="<?php echo home_url('/fertilidad/#vasovasostomia'); ?>">Vasovasostomía</a></li>
+                        <li><a href="<?php echo home_url('/fertilidad/#recuperacion'); ?>">Recuperación testicular</a></li>
+                        <li><a href="<?php echo home_url('/fertilidad/#vasectomia'); ?>">Vasectomía sin bisturí</a></li>
                     </ul>
                 </li>
 
+                <!-- ANDROESTÉTICA → subpáginas individuales -->
                 <li class="has-dropdown">
-                    <a href="<?php echo home_url('/androestetica/'); ?>">Androestética</a>
+                    <a href="<?php echo home_url('/androstetica/'); ?>">Androestética</a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo home_url('/androestetica/estetica-pene/'); ?>">Estética del pene</a></li>
-                        <li><a href="<?php echo home_url('/androestetica/estetica-escroto/'); ?>">Estética del escroto</a></li>
-                        <li><a href="<?php echo home_url('/androestetica/well-aging/'); ?>">Well Aging</a></li>
+                        <li><a href="<?php echo home_url('/androstetica/#estetica-pene'); ?>">Estética del pene</a></li>
+                        <li><a href="<?php echo home_url('/androstetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
+                        <li><a href="<?php echo home_url('/androstetica/#wellaging'); ?>">Well Aging</a></li>
                     </ul>
                 </li>
 
+                <!-- SUEROTERAPIA → anclas dentro de la misma página -->
                 <li class="has-dropdown">
                     <a href="<?php echo home_url('/sueroterapia/'); ?>">Sueroterapia</a>
                     <ul class="dropdown dropdown-wide">
-                        <li><a href="<?php echo home_url('/sueroterapia/well-aging/'); ?>">Well Aging</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/vigor-booster/'); ?>">Vigor Booster</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/beauty/'); ?>">Beauty</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/weight-loss/'); ?>">Weight Loss</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/balance/'); ?>">Balance</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/performance/'); ?>">Performance</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/intelect/'); ?>">Intelect</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/fertility/'); ?>">Fertility</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/hair-boost/'); ?>">Hair Boost</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/rescue/'); ?>">Rescue</a></li>
-                        <li><a href="<?php echo home_url('/sueroterapia/immunity/'); ?>">Immunity</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Well Aging</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Vigor Booster</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Beauty</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Weight Loss</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Balance</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Performance</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Intelect</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Fertility</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Hair Boost</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Rescue</a></li>
+                        <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Immunity</a></li>
                     </ul>
                 </li>
 
@@ -109,46 +113,46 @@
             <li class="mobile-has-sub">
                 <button type="button" class="mobile-sub-toggle">Salud Sexual <span class="mobile-arrow">+</span></button>
                 <ul class="mobile-sub">
-                    <li><a href="<?php echo home_url('/salud-sexual/problemas-de-ereccion/'); ?>">Problemas de erección</a></li>
-                    <li><a href="<?php echo home_url('/salud-sexual/terapia-hormonal/'); ?>">Terapia hormonal</a></li>
-                    <li><a href="<?php echo home_url('/salud-sexual/problemas-de-eyaculacion/'); ?>">Problemas de eyaculación</a></li>
+                    <li><a href="<?php echo home_url('/salud-sexual/#seccion-a'); ?>">Problemas de erección</a></li>
+                    <li><a href="<?php echo home_url('/salud-sexual/#seccion-b'); ?>">Terapia hormonal</a></li>
+                    <li><a href="<?php echo home_url('/salud-sexual/#seccion-c'); ?>">Problemas de eyaculación</a></li>
                 </ul>
             </li>
 
             <li class="mobile-has-sub">
                 <button type="button" class="mobile-sub-toggle">Fertilidad <span class="mobile-arrow">+</span></button>
                 <ul class="mobile-sub">
-                    <li><a href="<?php echo home_url('/fertilidad-masculina/estudio-fertilidad/'); ?>">Estudio de fertilidad</a></li>
-                    <li><a href="<?php echo home_url('/fertilidad-masculina/varicocele/'); ?>">Varicocele</a></li>
-                    <li><a href="<?php echo home_url('/fertilidad-masculina/vasovasostomia/'); ?>">Vasovasostomía</a></li>
-                    <li><a href="<?php echo home_url('/fertilidad-masculina/recuperacion-testicular/'); ?>">Recuperación testicular</a></li>
-                    <li><a href="<?php echo home_url('/fertilidad-masculina/vasectomia/'); ?>">Vasectomía sin bisturí</a></li>
+                    <li><a href="<?php echo home_url('/fertilidad/#estudio'); ?>">Estudio de fertilidad</a></li>
+                    <li><a href="<?php echo home_url('/fertilidad/#varicocele'); ?>">Varicocele</a></li>
+                    <li><a href="<?php echo home_url('/fertilidad/#vasovasostomia'); ?>">Vasovasostomía</a></li>
+                    <li><a href="<?php echo home_url('/fertilidad/#recuperacion'); ?>">Recuperación testicular</a></li>
+                    <li><a href="<?php echo home_url('/fertilidad/#vasectomia'); ?>">Vasectomía sin bisturí</a></li>
                 </ul>
             </li>
 
             <li class="mobile-has-sub">
                 <button type="button" class="mobile-sub-toggle">Androestética <span class="mobile-arrow">+</span></button>
                 <ul class="mobile-sub">
-                    <li><a href="<?php echo home_url('/androestetica/estetica-pene/'); ?>">Estética del pene</a></li>
-                    <li><a href="<?php echo home_url('/androestetica/estetica-escroto/'); ?>">Estética del escroto</a></li>
-                    <li><a href="<?php echo home_url('/androestetica/well-aging/'); ?>">Well Aging</a></li>
+                    <li><a href="<?php echo home_url('/androstetica/#estetica-pene'); ?>">Estética del pene</a></li>
+                    <li><a href="<?php echo home_url('/androstetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
+                    <li><a href="<?php echo home_url('/androstetica/#wellaging'); ?>">Well Aging</a></li>
                 </ul>
             </li>
 
             <li class="mobile-has-sub">
                 <button type="button" class="mobile-sub-toggle">Sueroterapia <span class="mobile-arrow">+</span></button>
                 <ul class="mobile-sub">
-                    <li><a href="<?php echo home_url('/sueroterapia/well-aging/'); ?>">Well Aging</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/vigor-booster/'); ?>">Vigor Booster</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/beauty/'); ?>">Beauty</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/weight-loss/'); ?>">Weight Loss</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/balance/'); ?>">Balance</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/performance/'); ?>">Performance</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/intelect/'); ?>">Intelect</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/fertility/'); ?>">Fertility</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/hair-boost/'); ?>">Hair Boost</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/rescue/'); ?>">Rescue</a></li>
-                    <li><a href="<?php echo home_url('/sueroterapia/immunity/'); ?>">Immunity</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Well Aging</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Vigor Booster</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Beauty</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Weight Loss</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Balance</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Performance</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Intelect</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Fertility</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Hair Boost</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Rescue</a></li>
+                    <li><a href="<?php echo home_url('/sueroterapia/#cocktails'); ?>">Immunity</a></li>
                 </ul>
             </li>
 
