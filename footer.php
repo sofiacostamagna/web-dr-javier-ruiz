@@ -76,7 +76,7 @@
    FOOTER PERSONALIZADO MIAMI
    ============================= */
 .site-footer-miami {
-    font-size: 1rem;
+    font-size: 0.82rem;
 }
 .site-footer-miami .footer-tagline,
 .site-footer-miami .f-eyebrow,
@@ -85,7 +85,7 @@
 .site-footer-miami .btn-footer-gold,
 .site-footer-miami .footer-legal,
 .site-footer-miami .footer-legal-links a {
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
 .site-footer-miami .f-eyebrow {
     font-weight: 600;
@@ -93,7 +93,7 @@
     text-transform: uppercase;
 }
 .site-footer-miami .footer-logo-miami {
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
 .site-footer-miami {
@@ -192,5 +192,16 @@
 @media (max-width: 480px) {
     .wa-miami-style { bottom: 20px; right: 20px; padding: 12px 20px; }
     .footer-logo-miami { font-size: 2rem; }
+}
+.site-footer-miami .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+@media (max-width: 768px) {
+    .site-footer-miami .container {
+        padding: 0 24px;
+    }
 }
 </style>
