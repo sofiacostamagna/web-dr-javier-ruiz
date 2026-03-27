@@ -163,3 +163,20 @@
     </nav>
 
 </div>
+
+<script>
+// Scroll a ancla con offset del header
+document.addEventListener('DOMContentLoaded', function() {
+    var hash = window.location.hash;
+    if (hash) {
+        setTimeout(function() {
+            var el = document.querySelector(hash);
+            if (el) {
+                var headerH = document.getElementById('site-header') ? document.getElementById('site-header').offsetHeight : 80;
+                var top = el.getBoundingClientRect().top + window.scrollY - headerH - 20;
+                window.scrollTo({ top: top, behavior: 'smooth' });
+            }
+        }, 500);
+    }
+});
+</script>
