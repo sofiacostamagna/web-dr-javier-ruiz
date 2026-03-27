@@ -113,3 +113,13 @@ register_nav_menus([
 // Forzar que el header y footer del tema se muestren
 add_filter( 'tahefobu_hide_theme_header', '__return_false' );
 add_filter( 'tahefobu_hide_theme_footer', '__return_false' );
+
+// Scroll suave con offset para header fijo
+add_action( 'wp_head', function() {
+    echo '<style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+    </style>';
+});

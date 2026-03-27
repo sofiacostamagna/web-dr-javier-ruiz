@@ -50,11 +50,11 @@
 
                 <!-- ANDROESTÉTICA → subpáginas individuales -->
                 <li class="has-dropdown">
-                    <a href="<?php echo home_url('/androstetica/'); ?>">Androestética</a>
+                    <a href="<?php echo home_url('/androestetica/'); ?>">Androestética</a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo home_url('/androstetica/#estetica-pene'); ?>">Estética del pene</a></li>
-                        <li><a href="<?php echo home_url('/androstetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
-                        <li><a href="<?php echo home_url('/androstetica/#wellaging'); ?>">Well Aging</a></li>
+                        <li><a href="<?php echo home_url('/androestetica/#estetica-pene'); ?>">Estética del pene</a></li>
+                        <li><a href="<?php echo home_url('/androestetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
+                        <li><a href="<?php echo home_url('/androestetica/#wellaging'); ?>">Well Aging</a></li>
                     </ul>
                 </li>
 
@@ -133,9 +133,9 @@
             <li class="mobile-has-sub">
                 <button type="button" class="mobile-sub-toggle">Androestética <span class="mobile-arrow">+</span></button>
                 <ul class="mobile-sub">
-                    <li><a href="<?php echo home_url('/androstetica/#estetica-pene'); ?>">Estética del pene</a></li>
-                    <li><a href="<?php echo home_url('/androstetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
-                    <li><a href="<?php echo home_url('/androstetica/#wellaging'); ?>">Well Aging</a></li>
+                    <li><a href="<?php echo home_url('/androestetica/#estetica-pene'); ?>">Estética del pene</a></li>
+                    <li><a href="<?php echo home_url('/androestetica/#estetica-escroto'); ?>">Estética del escroto</a></li>
+                    <li><a href="<?php echo home_url('/androestetica/#wellaging'); ?>">Well Aging</a></li>
                 </ul>
             </li>
 
