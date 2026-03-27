@@ -50,7 +50,7 @@
             <div class="footer-col footer-col-qr">
                 <span class="f-eyebrow">Escanéame</span>
                 <div class="footer-qr">
-                    <img src="https://drjavierruizromero.com/wp-content/uploads/2026/03/DrJavierRuiz.png" alt="QR Dr. Javier Ruiz">
+                    <img src="https://drjavierruizromero.com/wp-content/uploads/2026/03/DrJavierRuiz.png" alt="QR Dr. Javier Ruiz" style="max-width: 220px; max-height: 220px;">
                 </div>
                 <p class="footer-qr-label">Accede al sitio</p>
             </div>
@@ -154,12 +154,12 @@
 /* QR */
 .footer-col-qr { align-items: center; text-align: center; }
 .footer-qr {
-    width: 120px;
-    height: 120px;
-    padding: 8px;
+    width: 220px;
+    height: 220px;
+    padding: 18px;
     background: #fff;
     border: 1px solid rgba(197,164,126,0.25);
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 .footer-qr img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .footer-qr-label {
