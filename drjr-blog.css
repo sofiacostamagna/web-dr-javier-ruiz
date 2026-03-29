@@ -1,7 +1,16 @@
 /* ═══════════════════════════════════════════════════════════
-   drjr-blog.css
-   Subir a: /wp-content/themes/hello-elementor/drjr-blog.css
+   drjr-blog.css — v2
+   /wp-content/themes/hello-elementor/drjr-blog.css
    ═══════════════════════════════════════════════════════════ */
+
+/* ── FULL WIDTH — fuerza ancho real ignorando Elementor ─── */
+.drjr-blog-wrap {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
 /* ── VARIABLES ──────────────────────────────────────────── */
 .drjr-blog {
@@ -15,16 +24,6 @@
     --sans:    'Jost', sans-serif;
     font-family: var(--sans);
     color: var(--dark);
-}
-
-/* ── FULL WIDTH — rompe el contenedor Elementor ─────────── */
-.drjr-blog-wrap {
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    width: 100vw;
-    max-width: 100vw;
-    box-sizing: border-box;
 }
 
 /* ── HERO ───────────────────────────────────────────────── */
@@ -286,11 +285,9 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   ARTÍCULO INDIVIDUAL — single post de WordPress
-   Se aplica automáticamente a todas las Entradas
+   ARTÍCULO INDIVIDUAL — single post WordPress
    ══════════════════════════════════════════════════════════ */
 
-/* Cabecera del post */
 .single-post .entry-header {
     padding: 70px 80px 60px;
     background-image:
@@ -302,119 +299,68 @@
 
 .single-post .entry-header .cat-links {
     display: inline-block;
-    font-size: .6rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #c5a47e;
-    font-weight: 600;
-    background: rgba(197,164,126,0.10);
-    padding: 4px 14px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-decoration: none !important;
+    font-size: .6rem; letter-spacing: 3px; text-transform: uppercase;
+    color: #c5a47e; font-weight: 600; background: rgba(197,164,126,0.10);
+    padding: 4px 14px; border-radius: 20px;
+    margin-bottom: 20px; text-decoration: none !important;
 }
-.single-post .entry-header .cat-links a {
-    color: #c5a47e !important;
-    text-decoration: none !important;
-}
+.single-post .entry-header .cat-links a { color: #c5a47e !important; text-decoration: none !important; }
 
 .single-post .entry-title {
     font-family: 'Bodoni Moda', Georgia, serif !important;
     font-size: clamp(2rem, 4vw, 3.8rem) !important;
-    font-weight: 300 !important;
-    line-height: 1.05 !important;
-    letter-spacing: -1.5px !important;
-    color: #111 !important;
-    text-transform: none !important;
-    margin-bottom: 24px !important;
+    font-weight: 300 !important; line-height: 1.05 !important;
+    letter-spacing: -1.5px !important; color: #111 !important;
+    text-transform: none !important; margin-bottom: 24px !important;
     max-width: 860px;
 }
 
-.single-post .entry-meta {
-    font-size: .72rem;
-    color: #999;
-    letter-spacing: 1px;
-}
+.single-post .entry-meta { font-size: .72rem; color: #999; letter-spacing: 1px; }
 .single-post .entry-meta a { color: #999 !important; text-decoration: none !important; }
 
-/* Imagen destacada */
 .single-post .post-thumbnail { margin: 0 0 64px; }
-.single-post .post-thumbnail img {
-    width: 100%;
-    height: 460px;
-    object-fit: cover;
-    display: block;
-}
+.single-post .post-thumbnail img { width: 100%; height: 460px; object-fit: cover; display: block; }
 
-/* Contenido del artículo */
-.single-post .entry-content {
-    font-family: 'Jost', sans-serif;
-    max-width: 860px;
-}
+.single-post .entry-content { font-family: 'Jost', sans-serif; max-width: 860px; }
 
 .single-post .entry-content p {
-    font-size: 1.02rem !important;
-    color: #555 !important;
-    line-height: 1.95 !important;
-    margin-bottom: 22px !important;
+    font-size: 1.02rem !important; color: #555 !important;
+    line-height: 1.95 !important; margin-bottom: 22px !important;
 }
 
 .single-post .entry-content h2 {
     font-family: 'Bodoni Moda', Georgia, serif !important;
-    font-size: 1.8rem !important;
-    font-weight: 300 !important;
-    color: #111 !important;
-    margin: 52px 0 18px !important;
-    letter-spacing: -.4px !important;
-    text-transform: none !important;
+    font-size: 1.8rem !important; font-weight: 300 !important;
+    color: #111 !important; margin: 52px 0 18px !important;
+    letter-spacing: -.4px !important; text-transform: none !important;
     line-height: 1.15 !important;
 }
 
 .single-post .entry-content h3 {
     font-family: 'Bodoni Moda', Georgia, serif !important;
-    font-size: 1.3rem !important;
-    font-weight: 400 !important;
-    color: #111 !important;
-    margin: 36px 0 14px !important;
+    font-size: 1.3rem !important; font-weight: 400 !important;
+    color: #111 !important; margin: 36px 0 14px !important;
     text-transform: none !important;
 }
 
-.single-post .entry-content ul {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 0 28px !important;
-}
-
+.single-post .entry-content ul { list-style: none !important; padding: 0 !important; margin: 0 0 28px !important; }
 .single-post .entry-content ul li {
-    position: relative;
-    padding-left: 24px !important;
-    font-size: 1rem !important;
-    color: #555 !important;
-    line-height: 1.8 !important;
-    margin-bottom: 12px !important;
+    position: relative; padding-left: 24px !important;
+    font-size: 1rem !important; color: #555 !important;
+    line-height: 1.8 !important; margin-bottom: 12px !important;
 }
-
-.single-post .entry-content ul li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: #c5a47e;
-}
+.single-post .entry-content ul li::before { content: '—'; position: absolute; left: 0; color: #c5a47e; }
 
 .single-post .entry-content blockquote {
     border-left: 3px solid #c5a47e !important;
     padding: 28px 40px !important;
     background: rgba(197,164,126,0.08) !important;
-    margin: 48px 0 !important;
-    border-radius: 0 !important;
+    margin: 48px 0 !important; border-radius: 0 !important;
 }
-
 .single-post .entry-content blockquote p {
     font-family: 'Bodoni Moda', Georgia, serif !important;
-    font-style: italic !important;
-    font-size: 1.2rem !important;
-    color: #c5a47e !important;
-    line-height: 1.6 !important;
+    font-style: italic !important; font-size: 1.2rem !important;
+    color: #c5a47e !important; line-height: 1.6 !important;
 }
 
 /* ── RESPONSIVE ─────────────────────────────────────────── */
